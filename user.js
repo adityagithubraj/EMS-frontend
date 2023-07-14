@@ -24,6 +24,7 @@ loginForm.addEventListener('submit', async (e) => {
         console.log(data)
         alert(data.msg);
       localStorage.setItem('token', JSON.stringify(data.token));
+      window.location.href="./das.html"
       logoutBtn.style.display = 'block';
     } else {
       alert(data.msg);
